@@ -1,0 +1,113 @@
+// _hero.scss
+
+$hero: (
+  height:			 		    	800px,
+  height_mobile: 				400px,
+);
+
+
+.hero {
+	position: relative;
+	height: 980px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: 100px 1fr;
+	grid-template-areas: 
+		"hero--menu hero--main";
+}
+
+.hero--menu {
+	grid-area: hero--menu;
+	position: absolute;
+	z-index: 2;
+	width: 100vh;
+	transform: rotate(-90deg);
+	transform-origin: left;
+	left: 50px;
+	top: 75px;
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	    -ms-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
+	
+}
+
+.hero--main {
+	position: relative;
+	grid-area: hero--main;
+	display: grid;
+	grid-template-columns: 1.25fr 1fr;
+	grid-template-areas: 
+		"main--left main--right";
+
+	.background--large {
+		position: absolute;
+		z-index: -1;
+	}
+	
+	.main--left {
+		grid-area: main--left;
+	}
+
+	.main--right {
+		grid-area: main--right;
+		
+		img {
+			margin-top: 12%;
+			margin-bottom: 10px;
+		}
+		
+		.anchor--links {
+			position: relative;
+			z-index: 2;
+			a {
+				text-decoration: none;
+				text-transform: uppercase;
+				font-family: $font-default;
+				font-weight: 400;
+				letter-spacing: 2px;
+				cursor: pointer;
+				-webkit-transition: all 200ms ease-in-out;
+				   -moz-transition: all 200ms ease-in-out;
+				    -ms-transition: all 200ms ease-in-out;
+				     -o-transition: all 200ms ease-in-out;
+				        transition: all 200ms ease-in-out;
+				
+				&:hover {
+					color: $color-primary;
+					-webkit-transition: all 200ms ease-in-out;
+					   -moz-transition: all 200ms ease-in-out;
+					    -ms-transition: all 200ms ease-in-out;
+					     -o-transition: all 200ms ease-in-out;
+					        transition: all 200ms ease-in-out;
+				}
+			}
+		}
+	}
+
+	.hero--inner {
+		position: absolute;
+		bottom: 13.8%;
+		width: 100%;
+		z-index: 1;
+		h1 {
+			padding-left: 3%;
+			color: $color-primary;
+		}		
+
+		p {
+			text-transform: uppercase;
+			padding-left: 14.75%;
+		}
+	}
+}
+
+.background--large {
+	height: 64.3%;
+	width: 100%;
+	
+	&.background--primary {
+		background-color: $color-primary-light;
+	}
+}

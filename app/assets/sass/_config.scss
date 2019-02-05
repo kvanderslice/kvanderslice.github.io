@@ -1,0 +1,58 @@
+// _config.scss
+
+/**
+ * Font Family
+ */
+$font-heading							: "moderno-fb", "Georgia", Georgia, serif;
+$font-default							: "brandon-grotesque", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$fa												: "FontAwesome", FontAwesome;
+
+
+/**
+ * Colors
+ */
+
+$color-primary            : #90a396; // Primary Color Green : rgb value 
+$color-primary-dark       : darken($color-primary, 10%);
+$color-primary-light      : #d5dbd7;
+
+$color-secondary          : #efc53b; // Secondary Color Yellow : rgb value 
+$color-secondary-dark     : darken($color-secondary, 10%);
+$color-secondary-light    : #f6e7b5;
+
+$color-tertiary          : #ecaeb2; // Tertiary Color Pink : rgb value 
+$color-tertiary-dark     : darken($color-tertiary, 10%); 
+$color-tertiary-light    : #f6e7e8; 
+
+$color-quaternary        : #676d8a; // Quart Color Purple : rgb value 
+$color-quaternary-light  : #d3d5dc; 
+
+$color-gray       				: #55575a;
+
+$color-black              : #55575a;
+$color-white         			: #fff;
+
+$color-anchor-default     : #4ac2be; 
+$color-text-default     	: #55575a;
+$color-text-light         : #595a5c;
+
+$color-success          	: #94df60;
+$color-error            	: #e16060;
+
+/**
+ * Breakpoints
+ */
+$breakpoint-mobile : 767px;
+
+
+/**
+ * Transitions
+ */
+$transitions : (
+  default : ease-in-out, 
+  cubic   : cubic-bezier(.64,.09,.08,1)
+);
+
+
+
+
