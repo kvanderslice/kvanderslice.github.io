@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fifty Boilerplate Static</title>
+  <title>Kristina Vanderslice Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,7 +22,9 @@
   <script src="../components/prefix-free/prefixfree.min.js"></script>
   
   <!-- Typekit -->
-  <link rel="stylesheet" href="https://use.typekit.net/pzv0cne.css">
+<!--   <link rel="stylesheet" href="https://use.typekit.net/pzv0cne.css"> -->
+  <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700" rel="stylesheet">
+
 
 
 </head>
@@ -30,8 +32,70 @@
   
 	<div id="app" class=""> 
 
+    <div class="toggle--wrapper">
+      <button type="button" role="button" aria-label="Toggle Navigation" class="menu--toggle" href="#"><span></span></button>
+    </div>
+
+    <header class="header" id="header">
+      <h1 class="large">Menu</h1>
+      <ul class="menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portofolio</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </header>
+
  
 
+
+<section class="hero">
+	<h1 class="large">Hello</h1>
+</section>
+
+<section class="opening">
+	<div class="opening--left">
+		<h2>I'm Kristina,</h3>
+		<h3>A FrontEnd Developer <br>who loves great design, <br>clean code, usable websites, <br>and making an impact.</h3>
+<!-- 		<ul class="links">
+			<li><a href="#about">About</a></li>
+			<li><a href="#portfolio">Portfolio</a></li>
+			<li><a href="#contact">Contact</a></li>
+		</ul> -->
+	</div>
+	<div class="opening--right">
+		<img src="/assets/images/kristina-bw.jpg" alt="">
+	</div>
+</section>
+
+<section class="about" id="about">
+	<div class="background--rec"></div>
+	<h1 class="large">About</h1>
+	<p class="large">Being as passionate about the beauty and intricucy of great design as I am great development, I am a FrontEnd developer focused on providing pixel perfect, creative and beautiful code for the websites I build.</p>
+	<p class="large">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos facilis architecto vel ipsum ea pariatur eaque laborum, quos quibusdam, ducimus, nobis illum tempore. Eos dolorem optio voluptatem excepturi tempore. Quas.</p>
+</section>
+
+
+<section class="portfolio" id="portfolio">
+	<div class="background--rec"></div>
+	<h1 class="large">Portfolio</h1>
+
+	<div class="portfolio--grid">
+		<a href="#" class="grid--item">
+			<img src="/assets/images/powerofnine-alt.jpg" alt="">
+			<h2>Power of Nine Microsite</h2>
+		</a>
+		<a href="#" class="grid--item" style="background-image: url(/assets/images/lifestraw.jpg)">
+			<img src="/assets/images/lifestraw-alt.jpg" alt="">
+			<h2>Lifestraw Custom Shopify Theme</h2>
+		</a>
+		<a href="#" class="grid--item">
+			<img src="/assets/images/uwba-alt.jpg" alt="">
+			<h2>United Way of Bay Area Custom Wordpress Theme</h2>
+		</a>
+	</div>
+</section>
+	
+<!-- original design -->
 
 <!-- <section class="hero">
 	<div class="hero--bkg"></div>
@@ -46,7 +110,7 @@
 </section>
  -->
 
-<section class="hero" id="hero">
+<!-- <section class="hero" id="hero">
 	<div class="hero--menu">
 		<p class="large">menu</p>
 	</div>
@@ -70,6 +134,17 @@
 </section>
 
 
+<section class="section section--about" id="about">
+	<div class="about--menu"></div>
+	<div class="about--main">
+		<div class="rectangle--small"></div>
+		<h1>about</h1>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ex accusantium est. Doloribus consectetur, repellat id a fuga quisquam, natus. Architecto quas recusandae ut eos nisi sed sit repudiandae, dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate architecto consequuntur commodi earum nihil, possimus nobis ut, nulla accusamus, at autem laboriosam doloribus in suscipit unde quod fugiat modi dolores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, vitae odio debitis repudiandae nesciunt obcaecati dolore eligendi sunt corrupti aliquid sapiente accusamus, ipsum neque explicabo ducimus? Incidunt, quam explicabo ipsum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptates nisi, reprehenderit? Numquam labore ipsum saepe dignissimos pariatur quaerat sequi officia odio beatae totam nihil aspernatur, veritatis itaque molestiae, nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium perspiciatis, nesciunt magni fugit, repellendus distinctio nihil dolor adipisci maxime magnam molestiae voluptates dignissimos id nam. Neque dolore, ex nostrum illum.</p>
+	</div>
+</section>
+
+
 <section class="section section--portfolio" id="portfolio">
 	<div class="portfolio--main">
 		<h1>portfolio</h1>
@@ -84,17 +159,6 @@
 </section>
 
 
-<section class="section section--about" id="about">
-	<div class="about--menu"></div>
-	<div class="about--main">
-		<div class="rectangle--small"></div>
-		<h1>about</h1>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis ex accusantium est. Doloribus consectetur, repellat id a fuga quisquam, natus. Architecto quas recusandae ut eos nisi sed sit repudiandae, dignissimos. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate architecto consequuntur commodi earum nihil, possimus nobis ut, nulla accusamus, at autem laboriosam doloribus in suscipit unde quod fugiat modi dolores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam, vitae odio debitis repudiandae nesciunt obcaecati dolore eligendi sunt corrupti aliquid sapiente accusamus, ipsum neque explicabo ducimus? Incidunt, quam explicabo ipsum.</p>
-		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus voluptates nisi, reprehenderit? Numquam labore ipsum saepe dignissimos pariatur quaerat sequi officia odio beatae totam nihil aspernatur, veritatis itaque molestiae, nesciunt. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium perspiciatis, nesciunt magni fugit, repellendus distinctio nihil dolor adipisci maxime magnam molestiae voluptates dignissimos id nam. Neque dolore, ex nostrum illum.</p>
-	</div>
-</section>
-
-
 <section class="section section--contact" id="contact">
 	<div class="contact--left"></div>
 	<div class="contact--middle">
@@ -102,20 +166,20 @@
 		<h1>contact</h1>
 	</div>
 	<div class="contact--right"></div>
-</section>
+</section> -->
 
 
 
 	<div id="modals"></div>  
 
-
+<!-- 
 	<section class="footer" id="footer">
 		<div class="anchor--links">
 			<a href="#portfolio" class="btn--link">Portfolio</a>
 			<a href="#about" class="btn--link">About</a>
 			<a href="#contact" class="btn--link">Contact</a>
 		</div>
-	</section>
+	</section> -->
 
 	</div><!-- #app -->
 

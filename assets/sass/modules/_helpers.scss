@@ -187,9 +187,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #44A08D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #093637, #49A08D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to bottom, #093637, #49A08D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: rgba(236, 196, 171, 0.3);
   }
 
     &:after {
@@ -200,13 +198,7 @@
     position: absolute;
     top: 0;
     left: 0;
-    background: #44A08D;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to top, #093637, #49A08D);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to top, #093637, #49A08D);
-    // animation-duration: 16s;
-    // animation-iteration-count: infinite;
-    // animation-direction: alternate;
-    // animation-name: effectTest;
+    background: rgba(236, 196, 171, 0.3);
   }
 }
 

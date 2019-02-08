@@ -3,22 +3,25 @@
 /**
  * Font Family
  */
-$font-heading							: "moderno-fb", "Georgia", Georgia, serif;
-$font-default							: "brandon-grotesque", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+// $font-heading							: "moderno-fb", "Georgia", Georgia, serif;
+// $font-default							: "brandon-grotesque", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $fa												: "FontAwesome", FontAwesome;
+
+$font-heading : 'Playfair Display', serif;
+$font-default: 'Playfair Display', serif;
 
 
 /**
  * Colors
  */
 
-$color-primary            : #90a396; // Primary Color Green : rgb value 
+$color-primary            : #0e3a52; // Primary Color Blue : rgb value 
 $color-primary-dark       : darken($color-primary, 10%);
-$color-primary-light      : #d5dbd7;
+$color-primary-light      : #b0c6d2;
 
-$color-secondary          : #efc53b; // Secondary Color Yellow : rgb value 
+$color-secondary          : #ecc4ab; // Secondary Color Pink : rgb value 
 $color-secondary-dark     : darken($color-secondary, 10%);
-$color-secondary-light    : #f6e7b5;
+$color-secondary-light    : #f7e7dd;
 
 $color-tertiary          : #ecaeb2; // Tertiary Color Pink : rgb value 
 $color-tertiary-dark     : darken($color-tertiary, 10%); 

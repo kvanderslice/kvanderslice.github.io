@@ -59,21 +59,26 @@ h1, .h1, %h1 {
   letter-spacing: 2px;
    @include fluid-type(320px, 1600px, 40px, 160px);
    @include fluid-line-height(320px, 1600px, 40px, 160px);
+   
+   &.large {
+     @include fluid-type(320px, 1600px, 100px, 200px);
+   }
 }
 
 h2, .h2, %h2 {
   font-family: $font-heading;
   font-weight: 700; //bold
-  letter-spacing: -1px;
-  @include fluid-type(320px, 1600px, 24px, 40px);
-  @include fluid-line-height(320px, 1600px, 34px, 40px);
+  letter-spacing: 1px;
+  @include fluid-type(320px, 1600px, 30px, 50px);
+  @include fluid-line-height(320px, 1600px, 30px, 50px);
 }
 
 h3, .h3, %h3 {
   font-family: $font-heading;
   font-weight: 400; //regular
-  @include fluid-type(320px, 1600px, 20px, 26px);
-  @include fluid-line-height(320px, 1600px, 26px, 36px);
+  letter-spacing: 1px;
+  @include fluid-type(320px, 1600px, 28px, 30px);
+  @include fluid-line-height(320px, 1600px, 31px, 33px);
 }
 
 h4, .h4, %h4 {
@@ -108,7 +113,7 @@ p {
 
   &.large {
     font-family: $font-default;
-    text-transform: uppercase;
+    // text-transform: uppercase;
     font-weight: 400;
     letter-spacing: 4px;
     @include fluid-type(320px, 1600px, 16px, 24px);

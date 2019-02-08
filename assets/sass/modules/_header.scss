@@ -1,5 +1,166 @@
 // _header.scss
 
+.header {
+	height: 300px;
+	background-color: $color-secondary;
+	width: 100%;
+	position: fixed;
+	top: 0;
+	right: 0;
+	transform-origin: right;
+	z-index: 10;
+	display: flex;
+	align-items: flex-start;
+  flex-direction: column;
+  max-width: 0%;
+  opacity: 0;
+  visibility: hidden;
+	-webkit-transition: all 200ms ease-in-out;
+	   -moz-transition: all 200ms ease-in-out;
+	    -ms-transition: all 200ms ease-in-out;
+	     -o-transition: all 200ms ease-in-out;
+	        transition: all 200ms ease-in-out;
+	
+	h1 {
+		position: absolute;
+		bottom: -2px;
+		color: $color-white;
+    @include fluid-padding-left(320px, 1600px, 20px, 80px);
+	}
+
+	.menu {
+		list-style: none;
+		align-self: center;
+		position: absolute;
+		margin-left: 100px;
+		bottom: 45px;
+		
+		li {
+			display: inline-block;
+			font-weight: 700;
+			margin-right: 30px;
+  		@include fluid-type(320px, 1600px, 20px, 30px);
+		}
+
+		a {
+			color: $color-white;
+			text-decoration: none;
+		}
+	}
+}
 
 
+body.menu--opened {
+	.header {
+		max-width: 100%;
+		opacity: 1;
+		visibility: visible;
+		-webkit-transition: all 200ms ease-in-out;
+		   -moz-transition: all 200ms ease-in-out;
+		    -ms-transition: all 200ms ease-in-out;
+		     -o-transition: all 200ms ease-in-out;
+		        transition: all 200ms ease-in-out;
+	}
+
+	.toggle--wrapper {
+		button {
+		  // &.menu--toggle-x {
+
+		    span {
+		      background: none;
+
+		      &:before,
+		      &:after {
+		        transition-delay: 0s, 0.3s;
+		      }
+
+		      &:before {
+		        top: 0;
+		        transform: rotate(45deg);
+		      }
+
+		      &:after {
+		        bottom: 0;
+		        transform: rotate(-45deg);
+		        width: 100%;
+		      }
+		    }
+		  }
+		// }
+	}
+}
+
+
+.toggle--wrapper {
+	position: absolute;
+	z-index: 99;
+	top: 30px;
+	right: 30px;
+	
+	button {
+		border: none;
+		border-radius: 0;
+		outline: none;
+		width: 58px;
+	  height: 58px;
+	  // position: absolute;
+	  top: 33px;
+	  right: 30px;
+	  background-color: transparent;
+	  z-index: 99;
+	  visibility: visible;
+	  opacity: 1;
+	  transition: opacity 200ms ease-in-out;
+	  border: none;
+	  outline: none;
+
+	  padding: 0;
+	  cursor: pointer;
+	}
+	
+	span {
+		display: block;
+		position: absolute;
+		height: 2px;
+		width: 20px;
+		left: 30%;
+		background-color: $color-white;
+		-webkit-transition: all 200ms ease-in-out;
+		   -moz-transition: all 200ms ease-in-out;
+		    -ms-transition: all 200ms ease-in-out;
+		     -o-transition: all 200ms ease-in-out;
+		        transition: all 200ms ease-in-out;
+    &:before,
+    &:after {
+      position: absolute;
+      display: block;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: #fff;
+      content: "";
+      -webkit-transition: all 200ms ease-in-out;
+         -moz-transition: all 200ms ease-in-out;
+          -ms-transition: all 200ms ease-in-out;
+           -o-transition: all 200ms ease-in-out;
+              transition: all 200ms ease-in-out;
+      -webkit-transition-delay: 0.3s, 0s;
+         -moz-transition-delay: 0.3s, 0s;
+          -ms-transition-delay: 0.3s, 0s;
+           -o-transition-delay: 0.3s, 0s;
+              transition-delay: 0.3s, 0s;
+		}
+
+    &:before {
+      top: -7px;
+      transition-property: top, transform;
+    }
+
+    &:after {
+      bottom: -7px;
+      transition-property: bottom, transform;
+      width: 100%;
+    }
+	}
+}
 

@@ -122,6 +122,107 @@
   // $max_width: 1600px;
   // $min_font: 26px;
   // $max_font: 50px;
+  
+
+
+/**
+ * FLUID PADDING
+ */
+//All
+@mixin fluid-padding($min-vw, $max-vw, $min-padding, $max-padding) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-padding);
+  $u4: unit($max-padding);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding: $min-padding;
+      @media screen and (min-width: $min-vw) {
+        padding: calc(#{$min-padding} + #{strip-unit($max-padding - $min-padding)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        padding: $max-padding;
+      }
+    }
+  }
+}
+//Right Only
+@mixin fluid-padding-right($min-vw, $max-vw, $min-padding, $max-padding) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-padding);
+  $u4: unit($max-padding);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding-right: $min-padding;
+      @media screen and (min-width: $min-vw) {
+        padding-right: calc(#{$min-padding} + #{strip-unit($max-padding - $min-padding)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        padding-right: $max-padding;
+      }
+    }
+  }
+}
+//Left Only
+@mixin fluid-padding-left($min-vw, $max-vw, $min-padding, $max-padding) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-padding);
+  $u4: unit($max-padding);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding-left: $min-padding;
+      @media screen and (min-width: $min-vw) {
+        padding-left: calc(#{$min-padding} + #{strip-unit($max-padding - $min-padding)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        padding-left: $max-padding;
+      }
+    }
+  }
+}
+//Top Only
+@mixin fluid-padding-top($min-vw, $max-vw, $min-padding, $max-padding) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-padding);
+  $u4: unit($max-padding);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding-top: $min-padding;
+      @media screen and (min-width: $min-vw) {
+        padding-top: calc(#{$min-padding} + #{strip-unit($max-padding - $min-padding)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        padding-top: $max-padding;
+      }
+    }
+  }
+}
+//Bottom Only
+@mixin fluid-padding-bottom($min-vw, $max-vw, $min-padding, $max-padding) {
+  $u1: unit($min-vw);
+  $u2: unit($max-vw);
+  $u3: unit($min-padding);
+  $u4: unit($max-padding);
+
+  @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
+    & {
+      padding-bottom: $min-padding;
+      @media screen and (min-width: $min-vw) {
+        padding-bottom: calc(#{$min-padding} + #{strip-unit($max-padding - $min-padding)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+      }
+      @media screen and (min-width: $max-vw) {
+        padding-bottom: $max-padding;
+      }
+    }
+  }
+}
 
 
 
