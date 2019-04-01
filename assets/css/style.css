@@ -1685,6 +1685,7 @@ h3, .h3 {
 h4, .h4 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 h4, .h4 {
   font-size: 20px;
@@ -1700,22 +1701,23 @@ h4, .h4 {
   }
 }
 h4, .h4 {
-  line-height: 30px;
+  line-height: 28px;
 }
 @media screen and (min-width: 320px) {
   h4, .h4 {
-    line-height: calc(30px + 6 * ((100vw - 320px) / 1280));
+    line-height: calc(28px + 6 * ((100vw - 320px) / 1280));
   }
 }
 @media screen and (min-width: 1600px) {
   h4, .h4 {
-    line-height: 36px;
+    line-height: 34px;
   }
 }
 
 h5, .h5 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
 }
 h5, .h5 {
   font-size: 19px;
@@ -1747,32 +1749,33 @@ h5, .h5 {
 h6, .h6 {
   font-family: "Lato", sans-serif;
   font-weight: 300;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 h6, .h6 {
-  font-size: 19px;
+  font-size: 16px;
 }
 @media screen and (min-width: 320px) {
   h6, .h6 {
-    font-size: calc(19px + 5 * ((100vw - 320px) / 1280));
+    font-size: calc(16px + 4 * ((100vw - 320px) / 1280));
   }
 }
 @media screen and (min-width: 1600px) {
   h6, .h6 {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 h6, .h6 {
-  line-height: 28px;
+  line-height: 16px;
 }
 @media screen and (min-width: 320px) {
   h6, .h6 {
-    line-height: calc(28px + 6 * ((100vw - 320px) / 1280));
+    line-height: calc(16px + 4 * ((100vw - 320px) / 1280));
   }
 }
 @media screen and (min-width: 1600px) {
   h6, .h6 {
-    line-height: 34px;
+    line-height: 20px;
   }
 }
 
@@ -1807,6 +1810,9 @@ p {
   p {
     line-height: 28px;
   }
+}
+p.alt {
+  font-family: "Lato", sans-serif;
 }
 p.large {
   font-family: "Lato", sans-serif;
@@ -2158,6 +2164,7 @@ table td, table th {
   height: 400px;
   width: 100%;
   position: relative;
+  box-shadow: 26px 33px 32px -24px rgba(0, 0, 0, 0.3);
 }
 .section--about .about--inner .intro--wrapper:after {
   content: '';
@@ -2290,6 +2297,108 @@ table td, table th {
   margin-bottom: 60px;
 }
 
+.section--portfolio-alt {
+  margin-top: 500px;
+}
+@media screen and (max-width: 768px) {
+  .section--portfolio-alt {
+    margin-top: 250px;
+  }
+}
+@media screen and (max-width: mobile) {
+  .section--portfolio-alt {
+    margin-top: 250px;
+  }
+}
+.section--portfolio-alt .portfolio--inner {
+  position: relative;
+}
+.section--portfolio-alt .portfolio--inner .header--wrapper {
+  position: relative;
+  margin-bottom: 40px;
+  height: 200px;
+}
+.section--portfolio-alt .portfolio--inner .header--wrapper h2.large {
+  text-transform: uppercase;
+  color: #b0c6d2;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  opacity: .5;
+}
+.section--portfolio-alt .portfolio--inner .header--wrapper h2.heading {
+  text-transform: uppercase;
+  color: #1e2a93;
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  -webkit-transform: translateY(-75%);
+  -moz-transform: translateY(-75%);
+  -ms-transform: translateY(-75%);
+  -o-transform: translateY(-75%);
+  transform: translateY(-75%);
+}
+.section--portfolio-alt .portfolio--inner .header--wrapper h2.heading {
+  padding-left: 10px;
+}
+@media screen and (min-width: 320px) {
+  .section--portfolio-alt .portfolio--inner .header--wrapper h2.heading {
+    padding-left: calc(10px + 24 * ((100vw - 320px) / 1280));
+  }
+}
+@media screen and (min-width: 1600px) {
+  .section--portfolio-alt .portfolio--inner .header--wrapper h2.heading {
+    padding-left: 34px;
+  }
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper {
+  margin-left: 25%;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card {
+  background-color: #fff;
+  color: #1e2a93;
+  border: 1px solid #1e2a93;
+  position: relative;
+  box-shadow: 26px 33px 32px -24px rgba(0, 0, 0, 0.3);
+  margin-bottom: 100px;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #1e2a93;
+  bottom: -12%;
+  right: -5%;
+  z-index: -1;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card h4 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-bottom: 0px;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card h6 {
+  text-transform: uppercase;
+  font-weight: 500;
+  margin-top: 0px;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card p {
+  font-weight: 100;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card hr {
+  color: #1e2a93;
+  width: 75%;
+  height: 1.5px;
+  border: none;
+  background-color: #1e2a93;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: 25%;
+}
+.section--portfolio-alt .portfolio--inner .content--wrapper .portfolio--card .card--inner {
+  padding: 60px 70px;
+}
+
 .section--contact {
   margin-top: 400px;
   margin-bottom: 200px;
@@ -2393,6 +2502,7 @@ table td, table th {
 .hero .hero--inner {
   height: 65%;
   display: flex;
+  max-width: 1600px;
 }
 .hero .hero--inner {
   padding: 30px;
@@ -2513,14 +2623,14 @@ table td, table th {
   width: auto;
   height: 90%;
   object-fit: cover;
+  box-shadow: 26px 33px 32px -24px rgba(0, 0, 0, 0.3);
 }
 .hero .hero--spacer {
   background-color: #151e69;
 }
 
 .btn {
-  height: 50px;
-  padding: 0 25px;
+  text-transform: uppercase;
   -webkit-transition: background 200ms ease-in-out, color 200ms ease-in-out;
   -moz-transition: background 200ms ease-in-out, color 200ms ease-in-out;
   -o-transition: background 200ms ease-in-out, color 200ms ease-in-out;

@@ -158,13 +158,15 @@ h3, .h3, %h3 {
 h4, .h4, %h4 {
   font-family: $font-heading;
   font-weight: 300;
+  letter-spacing: 1px;
   @include fluid-type(320px, 1600px, 20px, 26px);
-  @include fluid-line-height(320px, 1600px, 30px, 36px);
+  @include fluid-line-height(320px, 1600px, 28px, 34px);
 }
 
 h5, .h5, %h5 {
   font-family: $font-heading;
   font-weight: 300;
+  letter-spacing: 1px;
   @include fluid-type(320px, 1600px, 19px, 24px);
   @include fluid-line-height(320px, 1600px, 28px, 34px);
 }
@@ -172,9 +174,10 @@ h5, .h5, %h5 {
 h6, .h6, %h6 {
   font-family: $font-default;
   font-weight: 300;
+  letter-spacing: 1px;
   text-transform: uppercase;
-  @include fluid-type(320px, 1600px, 19px, 24px);
-  @include fluid-line-height(320px, 1600px, 28px, 34px);
+  @include fluid-type(320px, 1600px, 16px, 20px);
+  @include fluid-line-height(320px, 1600px, 16px, 20px);
 }
 
 p {
@@ -185,6 +188,9 @@ p {
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale; 
   
+  &.alt {
+    font-family: $font-heading;
+  }
 
   &.large {
     font-family: $font-default;

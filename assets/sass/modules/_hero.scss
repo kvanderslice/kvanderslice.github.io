@@ -29,6 +29,7 @@ $hero: (
   	height: 65%;
   	display: flex;
   	@extend %v-align;		
+  	max-width: 1600px;
 	}
 
 	.content--wrapper {
@@ -101,6 +102,7 @@ $hero: (
 	  	height: 90%;
 	  	object-fit: cover;
 	  	@extend %v-align;
+      box-shadow: 26px 33px 32px -24px rgba(0, 0, 0, 0.3);
 	  }	
 	}
 
