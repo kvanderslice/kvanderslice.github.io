@@ -3,25 +3,24 @@
 /**
  * Font Family
  */
-// $font-heading							: "moderno-fb", "Georgia", Georgia, serif;
-// $font-default							: "brandon-grotesque", "OpenSans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-$fa												: "FontAwesome", FontAwesome;
+$font-heading : 'Lato', sans-serif;
+$font-default : 'Lato', sans-serif;
+// $font-default : 'Playfair Display', serif;
 
-$font-heading : 'Playfair Display', serif;
-$font-default: 'Playfair Display', serif;
+$fa						: "FontAwesome", FontAwesome;
 
 
 /**
  * Colors
  */
 
-$color-primary            : #0e3a52; // Primary Color Blue : rgb value 
+$color-primary            : #1e2a93; // Primary Color Blue : rgb value 
 $color-primary-dark       : darken($color-primary, 10%);
 $color-primary-light      : #b0c6d2;
 
-$color-secondary          : #ecc4ab; // Secondary Color Pink : rgb value 
+$color-secondary          : #fc6073; // Secondary Color Pink : rgb value 
 $color-secondary-dark     : darken($color-secondary, 10%);
-$color-secondary-light    : #f7e7dd;
+$color-secondary-light    : #fee5e7;
 
 $color-tertiary          : #ecaeb2; // Tertiary Color Pink : rgb value 
 $color-tertiary-dark     : darken($color-tertiary, 10%); 
@@ -35,8 +34,8 @@ $color-gray       				: #55575a;
 $color-black              : #55575a;
 $color-white         			: #fff;
 
-$color-anchor-default     : #4ac2be; 
-$color-text-default     	: #55575a;
+$color-anchor-default     : #111557; 
+$color-text-default     	: #111557;
 $color-text-light         : #595a5c;
 
 $color-success          	: #94df60;

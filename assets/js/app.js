@@ -957,14 +957,14 @@
     })
   }
 
-  /**
-   * Menu
-   */
+  // /**
+  //  * Menu
+  //  */
 
-  const menuToggle = document.querySelector('.menu--toggle')
-  menuToggle.addEventListener('click', function () {
-    document.body.classList.toggle('menu--opened')
-  })
+  // const menuToggle = document.querySelector('.menu--toggle')
+  // menuToggle.addEventListener('click', function () {
+  //   document.body.classList.toggle('menu--opened')
+  // })
 
   return app
 })(jQuery)

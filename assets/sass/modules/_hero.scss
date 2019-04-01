@@ -6,26 +6,132 @@ $hero: (
 );
 
 .hero {
-	height: 300px;
-	background-color: $color-primary;
-	width: 100%;
+	height: 100vh;
+	min-height: 800px;
 	position: relative;
-	
+	display: grid;
+	grid-template-columns: 75px 1fr;
+	grid-template-rows: 1fr;
+	grid-template-areas: 
+		"grid--header grid--body";
+		
 	@include media ('mobile') {
-		height: 250px;
+		grid-template-areas: 
+		"grid--header"
+		"grid--body";
+		
+		grid-template-columns: 1fr;
+		grid-template-rows: 50px 1fr;
 	}
-	
-	h1 {
-		position: absolute;
-		bottom: -2px;
-		color: $color-white;
-    @include fluid-padding-left(320px, 1600px, 20px, 80px);
-    
-    @include media ('mobile') {
-    	bottom: 18px;
-    }
+
+	.hero--inner {
+  	@include fluid-padding(320px, 1600px, 30px, 60px);
+  	height: 65%;
+  	display: flex;
+  	@extend %v-align;		
+	}
+
+	.content--wrapper {
+		@include fluid-padding-right(320px, 1600px, 75px, 200px);
+		@include fluid-padding-left(320px, 1600px, 25px, 50px);
+  	display: flex;
+  	justify-content: center;
+  	-webkit-flex-direction: column;
+  	    -ms-flex-direction: column;
+  	        flex-direction: column;
+
+  	
+		.header--wrapper {
+			position: relative;
+			margin-bottom: 40px;
+			height: 200px;
+			
+			h2.large {
+				text-transform: uppercase;
+				color: $color-secondary-light;
+				z-index: -1;
+				position: absolute;
+				height: 100%;
+				opacity: .5;
+			}
+			
+			h2.heading {
+				text-transform: uppercase;
+				color: $color-secondary;
+				z-index: 1;
+				position: absolute;
+				bottom: 0;
+				-webkit-transform: translateY(-75%);
+				   -moz-transform: translateY(-75%);
+				    -ms-transform: translateY(-75%);
+				     -o-transform: translateY(-75%);
+				        transform: translateY(-75%);
+				@include fluid-padding-left(320px, 1600px, 10px, 34px);
+			}
+
+		}
+		
+		.intro--wrapper {
+			@include fluid-padding-left(320px, 1600px, 30px, 80px);
+			
+			p {
+				color: $color-text-default;
+				font-weight: 100;
+			}
+		}
+	}
+
+	.img--wrapper {
+	  height: 100%;
+	  position: relative;
+
+  	&:after {
+  		content: '';
+  		height: 110%;
+			background-color: $color-primary;
+			width: 15%;
+			position: absolute;
+			top: -5%;
+			right: -5%;
+			z-index: -1;
+  	}
+  
+	  img {
+	  	width: auto;
+	  	height: 90%;
+	  	object-fit: cover;
+	  	@extend %v-align;
+	  }	
+	}
+
+	.hero--spacer {
+		background-color: $color-primary-dark;
 	}
 }
+
+
+
+// .hero {
+// 	height: 300px;
+// 	background-color: $color-primary;
+// 	width: 100%;
+// 	position: relative;
+	
+// 	@include media ('mobile') {
+// 		height: 250px;
+// 	}
+	
+// 	h1 {
+// 		position: absolute;
+// 		bottom: -2px;
+// 		color: $color-white;
+//     @include fluid-padding-left(320px, 1600px, 20px, 80px);
+    
+//     @include media ('mobile') {
+//     	bottom: 18px;
+//     }
+// 	}
+// }
 
 
 // .hero {

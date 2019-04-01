@@ -53,29 +53,103 @@ h1,h2,h3,h4,h5,h6 {
   margin: 0;
 }
 
+// h1, .h1, %h1 {
+//   font-family: $font-heading;
+//   font-weight: 600; //semi-bold
+//   letter-spacing: 2px;
+//    @include fluid-type(320px, 1600px, 40px, 160px);
+//    @include fluid-line-height(320px, 1600px, 40px, 160px);
+   
+//    &.large {
+//      @include fluid-type(320px, 1600px, 100px, 200px);
+//    }
+// }
+
+// h2, .h2, %h2 {
+//   font-family: $font-heading;
+//   font-weight: 700; 
+//   letter-spacing: 1px;
+//   @include fluid-type(320px, 1600px, 30px, 50px);
+//   @include fluid-line-height(320px, 1600px, 30px, 50px);
+// }
+
+// h3, .h3, %h3 {
+//   font-family: $font-heading;
+//   font-weight: 400; //regular
+//   letter-spacing: 1px;
+//   @include fluid-type(320px, 1600px, 28px, 30px);
+//   @include fluid-line-height(320px, 1600px, 31px, 33px);
+// }
+
+// h4, .h4, %h4 {
+//   font-family: $font-heading;
+//   font-weight: 300; //light
+//   @include fluid-type(320px, 1600px, 20px, 26px);
+//   @include fluid-line-height(320px, 1600px, 30px, 36px);
+// }
+
+// h5, .h5, %h5 {
+//   font-family: $font-heading;
+//   font-weight: 300;
+//   @include fluid-type(320px, 1600px, 19px, 24px);
+//   @include fluid-line-height(320px, 1600px, 28px, 34px);
+// }
+
+// h6, .h6, %h6 {
+//   font-family: $font-default;
+//   font-weight: 300;
+//   text-transform: uppercase;
+//   @include fluid-type(320px, 1600px, 19px, 24px);
+//   @include fluid-line-height(320px, 1600px, 28px, 34px);
+// }
+
+// p {
+//   font-family: $font-default;
+//   font-weight: 400;
+//   @include fluid-type(320px, 1600px, 30px, 24px);
+//   @include fluid-line-height(320px, 1600px, 40px, 34px);
+//   -webkit-font-smoothing: subpixel-antialiased;
+//   -moz-osx-font-smoothing: grayscale; 
+
+//   &.large {
+//     font-family: $font-default;
+//     font-weight: 400;
+//     letter-spacing: 4px;
+//     @include fluid-type(320px, 1600px, 16px, 24px);
+//     @include fluid-line-height(320px, 1600px, 26px, 34px);     
+//   }
+  
+//   &.small {
+//     font-family: $font-default;
+//     @include fluid-type(320px, 1600px, 12px, 14px);
+//     @include fluid-line-height(320px, 1600px, 24px, 24px);     
+//   } 
+// }
+
 h1, .h1, %h1 {
   font-family: $font-heading;
-  font-weight: 600; //semi-bold
+  font-weight: 700;
   letter-spacing: 2px;
-   @include fluid-type(320px, 1600px, 40px, 160px);
-   @include fluid-line-height(320px, 1600px, 40px, 160px);
-   
-   &.large {
-     @include fluid-type(320px, 1600px, 100px, 200px);
-   }
+   @include fluid-type(320px, 1600px, 25px, 40px);
+   @include fluid-line-height(320px, 1600px, 45px, 60px);
 }
 
 h2, .h2, %h2 {
   font-family: $font-heading;
-  font-weight: 700; //bold
+  font-weight: 700; 
   letter-spacing: 1px;
-  @include fluid-type(320px, 1600px, 30px, 50px);
+  @include fluid-type(320px, 1600px, 25px, 75px);
   @include fluid-line-height(320px, 1600px, 30px, 50px);
+   
+   &.large {
+     @include fluid-type(320px, 1600px, 75px, 150px);
+     @include fluid-line-height(320px, 1600px, 75px, 150px);
+   }
 }
 
 h3, .h3, %h3 {
   font-family: $font-heading;
-  font-weight: 400; //regular
+  font-weight: 400;
   letter-spacing: 1px;
   @include fluid-type(320px, 1600px, 28px, 30px);
   @include fluid-line-height(320px, 1600px, 31px, 33px);
@@ -83,7 +157,7 @@ h3, .h3, %h3 {
 
 h4, .h4, %h4 {
   font-family: $font-heading;
-  font-weight: 300; //light
+  font-weight: 300;
   @include fluid-type(320px, 1600px, 20px, 26px);
   @include fluid-line-height(320px, 1600px, 30px, 36px);
 }
@@ -105,16 +179,16 @@ h6, .h6, %h6 {
 
 p {
   font-family: $font-default;
-  font-weight: 400;
-  @include fluid-type(320px, 1600px, 30px, 24px);
-  @include fluid-line-height(320px, 1600px, 40px, 34px);
+  letter-spacing: 1.75px;
+  @include fluid-type(320px, 1600px, 16px, 18px);
+  @include fluid-line-height(320px, 1600px, 26px, 28px);
   -webkit-font-smoothing: subpixel-antialiased;
   -moz-osx-font-smoothing: grayscale; 
+  
 
   &.large {
     font-family: $font-default;
-    // text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 4px;
     @include fluid-type(320px, 1600px, 16px, 24px);
     @include fluid-line-height(320px, 1600px, 26px, 34px);     
