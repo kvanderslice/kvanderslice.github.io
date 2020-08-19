@@ -616,7 +616,9 @@ a.contact--link:hover:before {
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
 }
-a.nav--link:hover:before {
+
+@media only screen and (min-width: 768px) {
+  a.nav--link:hover:before {
 /*  background-color: #efd5a2;*/
   background-color: #f6e4da;
   height: 8px;
@@ -626,7 +628,9 @@ a.nav--link:hover:before {
   -ms-transition: all 200ms ease-in-out;
   -o-transition: all 200ms ease-in-out;
   transition: all 200ms ease-in-out;
+  }
 }
+
 a:before {
   content: '';
   height: 0px;
