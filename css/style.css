@@ -26,8 +26,15 @@ p{
 }
 
 section {
-	padding-top:85px;
-	padding-bottom:85px;
+	padding-top:50px;
+	padding-bottom:50px;
+}
+
+@media only screen and (min-width: 768px) {
+  section {
+    padding-top:80px;
+    padding-bottom:80px;
+  }
 }
 
 .no-gutter > [class*='col-'] {
@@ -48,13 +55,14 @@ a:hover,a:focus {
 
 .navbar > .container {
 /*  max-width: 1640px;
-*/  width: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
+*/width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
   -webkit-box-shadow: 0px 4px 16px -8px rgba(87,85,87,0.25);
   -moz-box-shadow: 0px 4px 16px -8px rgba(87,85,87,0.25);
   box-shadow: 0px 4px 16px -8px rgba(87,85,87,0.25);
 }
+
 
 .navbar-fixed-top .nav {
     padding: 15px 0;
@@ -549,12 +557,23 @@ footer p {
 }
 
 .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
-    height: 700px;
+    height: 300px;
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
     object-fit: cover;
 }
+
+@media only screen and (min-width: 768px) {
+  .img-responsive, .thumbnail > img, .thumbnail a > img, .carousel-inner > .item > img, .carousel-inner > .item > a > img {
+      height: 700px;
+      max-width: 1200px;
+      margin: 0 auto;
+      width: 100%;
+      object-fit: cover;
+  }
+}
+
 
 #about {
   background-color: rgba(210, 219, 216, .35); /*#d2dbd8*/
@@ -648,7 +667,7 @@ p.company, p.position {
 
 .breakquote {
 /*  padding-top: 50px;*/
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   background-color: #f6e4da;
 }
 
