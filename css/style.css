@@ -614,4 +614,11 @@ a:before {
 }
 
 
+#portfolio p {
+  margin: 0px;
+}
 
+p.company, p.position {
+  font-size: 14px;
+  line-height: 17px;
+}
